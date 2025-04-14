@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #11001c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #290628;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#placar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.time {
+    background-color: #290628;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.time h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.time h3 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #FFCD00; /* Cor dourada para destacar a pontuação */
+}
+
+.botoes-time {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.botoes-time button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botoes-time button:hover {
+    background-color: rgb(95, 82, 126);
+    transform: scale(1.1);
+}
+
+.botoes-time button:active {
+    transform: scale(1);
+}
+
+#txtmensagem {
+    font-size: 1.5rem;
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.finalizar {
+    margin-top: 20px;
+}
+
+.finalizar button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.finalizar button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+.finalizar button:active {
+    transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+    #placar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .time {
+        width: 80%;
+    }
+
+    .botoes-time button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    .time h2 {
+        font-size: 1.5rem;
+    }
+
+    .time h3 {
+        font-size: 3rem;
+    }
+
+    .botoes-time button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+.reiniciar {
+    margin-top: 20px;
+}
+
+.reiniciar button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reiniciar button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+.reiniciar button:active {
+    transform: scale(1);
+}
+
+

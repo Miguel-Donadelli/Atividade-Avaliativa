@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar Eletrônico</title>
+    <link rel="stylesheet" href="atividade.css">
+</head>
+<body>
+    <header><h1>PLACAR ELETRÔNICO</h1></header>
+
+    <div id="placar">
+        <div class="time">
+            <h2 id="time1">Sorocaba</h2>
+            <h3 id="placar-time1">0</h3>
+            <div class="botoes-time">
+                <button onclick="aumentar('time1')" id="btn-aumentar-time1">+1</button>
+                <button onclick="diminuir('time1')" id="btn-diminuir-time1">-1</button>
+                <button onclick="aumentarDois('time1')" id="btn-aumentar-dois-time1">+2</button>
+                <button onclick="diminuirDois('time1')" id="btn-diminuir-dois-time1">-2</button>
+            </div>
+        </div>
+
+        <div class="time">
+            <h2 id="time2">Itapetininga</h2>
+            <h3 id="placar-time2">0</h3>
+            <div class="botoes-time">
+                <button onclick="aumentar('time2')" id="btn-aumentar-time2">+1</button>
+                <button onclick="diminuir('time2')" id="btn-diminuir-time2">-1</button>
+                <button onclick="aumentarDois('time2')" id="btn-aumentar-dois-time2">+2</button>
+                <button onclick="diminuirDois('time2')" id="btn-diminuir-dois-time2">-2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="finalizar">
+        <button onclick="finalizarPartida()">Finalizar Partida</button>
+    </div>
+
+    <div class="reiniciar">
+        <button onclick="iniciarNovoJogo()">Iniciar Novo Jogo</button>
+    </div>
+
+    <h2 id="txtmensagem">Novo jogo iniciado!</h2>
+
+    <script src="atividade.js"></script>
+</body>
+</html>
